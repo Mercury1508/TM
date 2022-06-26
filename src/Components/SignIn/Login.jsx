@@ -1,11 +1,17 @@
 import React from 'react'
-import logoImg from '../../public/images/logo.png'
+
 import './Login.css'
 
+import { Col, Row, Container } from "react-bootstrap";
+// import Iframe from 'react-iframe'
 function Login(){
     return(
-        <div className="loginMain">
-        <h1 className="loginH1">SignIn</h1>
+		<div className="logindiv">
+		   <Container>
+		     <Row className="row">
+			<Col className="col">
+			<div className="loginMain">
+        <h1 className="loginH1">TeamMaker</h1>
             <div class="containerLogin">
 	        <div class="screenLogin">
 		    <div class="screen__content">
@@ -19,17 +25,17 @@ function Login(){
 					<input type="password" class="login__input" placeholder="Password" />
 				</div>
 				<button class="button login__submit">
-					<span class="button__text">Log In Now</span>
+					<span class="button__text">Log In</span>
 					<i class="button__icon fas fa-chevron-right"></i>
 				</button>				
 			</form>
 			<div class="social-login">
 				<h5>Log in via</h5>
 				<div class="social-icons">
-					<a href="#" class="social-login__icon fab fa-google"></a>
-					<a href="#" class="social-login__icon fab fa-facebook"></a>
+					<a href="/" className="social-login__icon fab fa-google"> </a>
+					<a href="/" className="social-login__icon fab fa-facebook"> </a>
 				</div>
-                <h4><a href="#" className="accMessage">Don't have an account?</a></h4>
+                <h4><a href="/" className="accMessage">Don't have an account?</a></h4>
 			</div>
 		</div>
 		<div class="screen__background">
@@ -41,7 +47,12 @@ function Login(){
 	    </div>
         </div>
         </div>
-    )
+			</Col>
+		</Row>
+	</Container>
+      </div> 
+
+    );
 }
 
 export default Login

@@ -1,8 +1,12 @@
 import React from "react";
 import './Home.css'
+
 import Navbar from '../navbar/navbar.jsx'
 import homeImg from '../../public/images/vsdsdv.jpg'
 import {Container,Row,Col} from 'react-bootstrap'
+
+import Rotate from 'react-reveal/Rotate';
+import Slide from 'react-reveal/Slide';
 
 function Home(){
     return (
@@ -12,13 +16,13 @@ function Home(){
                 <Container>
                     <Row>
                         <Col className="homeCol" sm={6}>
-                            <h1 className="homeHeading">Teamwork makes the Dreamwork</h1>
+                            <h1 className="homeHeading"><Rotate left top cascade>TeamWork</Rotate> makes the <Rotate left bottom cascade> Dreamwork</Rotate></h1>
                             <p className="homeDescription">Find your perfect teammates with similar interests and work together to achieve your goals.</p>
-                            <button className="links linkSign"><span class="front">Sign In</span></button>
+                       <button className="links linkSign"><span class="front">Sign In</span></button>    
                             <button className="links linkRegister"><span class="front">Register</span></button>
                         </Col>
                         <Col className="homeCol" sm={6}>
-                            <img src={homeImg} alt="homeImage" className="homeImg"/>
+                           <span className="homespan"> <Slide right> <img src={homeImg} alt="homeImage" className="homeImg"/> </Slide></span> 
                         </Col>
                     </Row>
                 </Container>
