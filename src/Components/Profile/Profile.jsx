@@ -26,7 +26,10 @@ function Profile(){
                             <input type="text" name="txtPhone" className="form-control" placeholder="Your Phone Number *" value="" />
                         </div>
                         <div className="form-group">
-                            <textarea name="txtLink" className="form-control" placeholder="Links *" ></textarea>
+                            <input type="text" name="txtYear" className="form-control" placeholder="Your Year *" value="" />
+                        </div>
+                        <div className="form-group">
+                            <input type="text" name="txtBranch" className="form-control" placeholder="Your Branch *" value="" />
                         </div>
                     </Col>
                     <Col md={6}>
@@ -35,6 +38,9 @@ function Profile(){
                         </div>
                         <div className="form-group">
                             <textarea name="txtMsg" className="form-control proDescription" placeholder="Description *" ></textarea>
+                        </div>
+                        <div className="form-group">
+                            <textarea name="txtLink" className="form-control" placeholder="Links *" ></textarea>
                         </div>
                     </Col>
                 </Row>
