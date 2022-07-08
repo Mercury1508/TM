@@ -2,13 +2,31 @@ import React from "react"
 import './Select.css'
 import Navbar from '../navbar/navbar.jsx'
 import Card from './Card.jsx'
+import { Button } from "react-bootstrap";
 import {Container,Row,Col} from 'react-bootstrap'
+import UserAuthContext from "../../context/UserAuthContext"
+import { useNavigate } from "react-router";
+
+import { useUserAuth } from "../../context/UserAuthContext";
 
 function Select(){
+    const { logOut, user } = useUserAuth();
+  const navigate = useNavigate();
+  const handleLogout = async () => {
+    try {
+      await logOut();
+      navigate("/");
+    } catch (error) {
+      console.log(error.message);
+    }
+  };
+//   variant="primary"
     return(
         <div>
             <div className="selectInner">
-                <Navbar />
+                <Navbar /><Button className="nav-logout"  onClick={handleLogout}>
+          Log out
+        </Button>
                 <h1 className="selectHeading">Choose your domain and explore</h1>
                 <Container className="selectCard">
                     <Row>

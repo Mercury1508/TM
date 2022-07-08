@@ -64,5 +64,6 @@ background: linear-gradient(to right, #17725d, #0c6952);
 }
 
 .proDescription{
-    height: 94px;
+    height: 150px;
+    width: 350px;
 }

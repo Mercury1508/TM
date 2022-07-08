@@ -19,3 +19,10 @@ background: linear-gradient(to right, #17725d, #0c6952);
 .selectHeading{
     margin-top: 20px;
 }
+.nav-logout{
+    position: relative;
+    right: 60px;
+    top: -75px;
+    color:white;
+    background-color:green;
+}

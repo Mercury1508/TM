@@ -7,7 +7,7 @@ function Card(props){
             <div className = "cardContainer">
             <div className = "card">
             <div className = "cardImage">
-            <img href = "#" src ={props.image} />
+            <img href = " " src ={props.image} />
             </div>
             <div className = "cardContent">
             <h3 className="cardHeading">{props.heading}</h3>
