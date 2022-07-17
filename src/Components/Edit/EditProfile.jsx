@@ -1,5 +1,5 @@
 import React from 'react'
-import './Profile.css'
+import './EditProfile.css'
 import Navbar from '../navbar/navbar.jsx'
 import {Container,Row,Col} from 'react-bootstrap'
 
@@ -12,7 +12,7 @@ function Profile(){
                 <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact" className="profileImg" />
             </div>
             <form method="post" className="profileForm">
-                <h3 className="profileH3">Enter your details</h3>
+                <h3 className="profileH3">Edit your details</h3>
                 <Container>
                 <Row className="profileRow">
                     <Col md={6}>
@@ -48,7 +48,7 @@ function Profile(){
                 </Row>
                 </Container>
                 <div>
-                    <input type="submit" name="btnSubmit" className="btnContact" value="Submit Details" />
+                    <input type="submit" name="btnSubmit" className="btnContact" value="Edit Details" />
                 </div>
             </form>
             </div>

@@ -58,13 +58,13 @@ function Login(){
 				
 					<div class="input-div">
 						{/* <i class="fa-solid fa-user"></i> */}
-						<input type="text" placeholder="Email" onChange={(e) => setEmail(e.target.value)} ></input>
+						<input type="text" className="loginInput" placeholder="Email" onChange={(e) => setEmail(e.target.value)} ></input>
 					</div>
 					<div class="input-div">	
 						{/* <i class="fa-solid fa-key"></i> */}
-						<input type="password" placeholder="Password"  onChange={(e) => setPassword(e.target.value)}></input>
+						<input type="password" className="loginInput" placeholder="Password"  onChange={(e) => setPassword(e.target.value)}></input>
 					</div>
-					<input type="submit" value="Login" id="login-btn"></input>
+					<input type="submit" className="loginInput" value="Login" id="login-btn"></input>
 
 					
                  <div>
